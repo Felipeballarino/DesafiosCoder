@@ -1,0 +1,20 @@
+[
+    {
+        "title": "Escuadra",
+        "price": 123.45,
+        "thumbnail": "https://es.wikipedia.org/wiki/Imagen#/media/Archivo:Image_created_with_a_mobile_phone.png",
+        "id": 0
+    },
+    {
+        "title": "globo",
+        "price": 123.45,
+        "thumbnail": "https://es.wikipedia.org/wiki/Imagen#/media/Archivo:Image_created_with_a_mobile_phone.png",
+        "id": 1
+    },
+    {
+        "title": "regla",
+        "price": 123.45,
+        "thumbnail": "https://es.wikipedia.org/wiki/Imagen#/media/Archivo:Image_created_with_a_mobile_phone.png",
+        "id": 2
+    }
+]

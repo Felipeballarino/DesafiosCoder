@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+
+    <title>Formulario Express</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Sonsie+One"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <form method="post" action="/api/productos/">
+      <label>Nombre de producto</label>
+      <input type="text" name="title" />
+      <label>Precio de producto</label>
+      <input type="number" name="price" />
+      <label>imagen de producto</label>
+      <input type="text" name="thumbnail" />
+      <input type="submit" />
+    </form>
+  </body>
+</html>
