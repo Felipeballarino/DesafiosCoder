@@ -3,30 +3,25 @@ const express = require("express")
 const { Router } = express
 
 const router = new Router()
+const Contenedor = require("../desafio_2.js")
+const file = new Contenedor("productos.txt")
 
 
-let arr = [
-    {
-        title: "agua ",
-        price: 200,
-        thumbnail: "foto",
-        id: 0
-    },
-    {
-        title: "papel ",
-        price: 150,
-        thumbnail: "foto",
-        id: 1
-    },
-]
+
 
 router.get("/", (req, res) => {
-    res.send(arr)
+    const product = file.getAll()
+    res.send({
+        menssage: "Array con todos los productos disponibles",
+        data: JSON.parse(product)
+    })
 })
 
-router.get('/:id', (req, res) => {
+router.get('/:id', async (req, res) => {
+    const product = await file.getAll()
+    const data = JSON.parse(product)
     const id = req.params.id
-    const resp = arr.filter(e => e.id == id)
+    const resp = await data.filter(e => e.id == id)
     resp.length >= 1 ? res.send(resp) : res.send({ error: "producto no encontrado" })
 })
 
