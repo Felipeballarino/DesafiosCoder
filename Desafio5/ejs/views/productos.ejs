@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <h1>Productos</h1>
+
+      <table border="1">
+        <tr>
+          <td></td>
+          <th>Nombre</th>
+          <th>Precio</th>
+          <th>Foto</th>
+        </tr>
+        <% data.forEach(function(pr){ %>
+        <tr>
+          <td></td>
+          <td><%= pr. title %></td>
+          <td><%= pr.price %></td>
+          <td><img src=' <%= pr.foto %>' /></td>
+        </tr>
+        <% }) %>
+      </table>
+      <!-- <% if(data.length > 1){ %>
+      <ul>
+        <% data.forEach(function(pr){ %>
+        <li><%= pr.nombre %></li>
+        <% }) %>
+      </ul>
+      <% } else{ %>
+      <h3>No hay productos disponibles</h3>
+      <% } %> -->
+
+      <a href="/">Volver al formulario</a>
+    </div>
+  </body>
+</html>

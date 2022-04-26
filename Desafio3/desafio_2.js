@@ -67,16 +67,6 @@ class Contenedor {
 
     getAll() {
        
-        // fs.readFile(`./${this.fileName}`, "utf-8", (error, contenido) => {
-        //     if (error) {
-        //         return error 
-        //     } else {
-        //         console.log(contenido, "entro")
-        //         return contenido
-        //     }
-        // })
-        
-
         try {
            return fs.readFileSync(`./${this.fileName}`, "utf-8")
         } catch (error) {

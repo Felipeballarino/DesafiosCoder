@@ -1,0 +1,21 @@
+<div class="container">
+  <h1>Productos</h1>
+
+  <table border="1">
+    <tr>
+      <td></td>
+      <th>Nombre</th>
+      <th>Precio</th>
+      <th>Foto</th>
+    </tr>
+    {{#each data}}
+      <tr>
+        <td></td>
+        <td>{{this.title}}</td>
+        <td>{{this.price}}</td>
+        <td><img src={{this.thumbnail}} /></td>
+      </tr>
+    {{/each}}
+  </table>
+  <a href="/">Volver al formulario</a>
+</div>
