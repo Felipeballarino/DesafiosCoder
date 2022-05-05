@@ -1,6 +1,6 @@
 const express = require("express");
 const multer = require("multer");
-const Contenedor = require("../utils/funcProds");
+const Contenedor = require("../Utils/Desafio_2");
 const funcProd = new Contenedor("productos");
 
 const { Router } = express;

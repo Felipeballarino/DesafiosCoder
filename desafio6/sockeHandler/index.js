@@ -2,7 +2,7 @@ const express = require("express");
 const app = express();
 const router = require("./routes/productos");
 
-const Contenedor = require("./utils/funcProds")
+const Contenedor = require("./Utils/Desafio_2")
 const fileProduc = new Contenedor("productos", "ultimo");
 const fileChat = new Contenedor("mensajes", "primero");
 
