@@ -1,0 +1,27 @@
+<div class="container" style="width: 500px">
+  <h1>Formulario Handlerbars</h1>
+  <form onsubmit="return addProducto()">
+    <div class="mb-3">
+      <label for="title" class="form-label">Nombre</label>
+      <input type="text" class="form-control" name="title" id="title" />
+    </div>
+    <div class="mb-3">
+      <label for="price" class="form-label">Precio</label>
+      <input
+        type="number"
+        class="form-control"
+        name="price" id="price"
+      />
+    </div>
+    <div class="mb-3">
+      <label for="thumbnail" class="form-label">Foto</label>
+      <input
+        type="file"
+        class="form-control"
+       id="thumbnail" name="thumbnail"
+      />
+    </div>
+    <button type="submit" class="btn btn-primary">Agregar</button>
+  </form>
+
+</div>
