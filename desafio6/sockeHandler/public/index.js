@@ -2,6 +2,7 @@ const socket = io();
 
 // Chat functions
 socket.on("mensage_back", (data) => {
+  console.log("front")
   socket.emit("message_client", "Estoy conectado, soy el cliente!");
   renderChat(data);
 });
@@ -81,8 +82,7 @@ const renderProd = (data) => {
             </td>
             <td scope="row">
               <img src=${prod.thumbnail} alt ="foto"/>
-            </td>
-                                
+            </td>                
             </tr> `;
       })}  
   </tbody>

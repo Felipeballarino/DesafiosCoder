@@ -30,6 +30,7 @@ const server = http.createServer(app);
 
 //Socket
 const { Server } = require("socket.io");
+const { render } = require("express/lib/response");
 const io = new Server(server);
 
 //Coneccion Socket
@@ -56,11 +57,7 @@ io.on("connection", (socket) => {
     
     const prodret = fileProduc.getAll();
     const lenghtcero = prodret.length > 0 ? true : false;
-    render("index", { listProds: prodret, lenghtcero });
-  });
-  socket.on("deleteProds", (id) => {
-    fileProduc.deleteById(id);
-    io.sockets.emit("productlist_back", fileProduc.getAll());
+    // render("index", { listProds: prodret, lenghtcero });
   });
 });
 
