@@ -1,0 +1,26 @@
+<div>
+  <h1>App Chat</h1>
+  <form id="formChat">
+    <input
+      type="text"
+      name="nb"
+      id="nb"
+      placeholder="Nombre"
+      class="form-control"
+    />
+    <input
+      type="text"
+      name="msn"
+      id="msn"
+      placeholder="Mensaje"
+      class="form-control"
+    />
+    <button type="submit">enviar</button>
+  </form>
+        <div id="caja"></div>
+</div>
+
+<script>
+  document.querySelector('#formChat').addEventListener('submit', e => {
+  e.preventDefault(); addMessage(); })
+</script>
